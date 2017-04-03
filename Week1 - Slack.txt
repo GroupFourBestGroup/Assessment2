@@ -1,0 +1,257 @@
+----- March 20th -----
+daical [7:50 AM] 
+Just to let you all know. Final hospital treatment today. C u all tomorrow
+
+marcchapman [9:12 AM] 
+https://en.wikipedia.org/wiki/Comparison_of_Kanban_software
+Wikipedia
+Comparison of Kanban software
+The page compares software with specific support for the Kanban Method. General project management software is not included on this list unless it offers specific support for Kanban.
+
+marcchapman [10:00 AM] 
+added this C++ snippet: JsonTestApp.cpp
+#include <iostream>
+#include "rapidjson/error/en.h"
+#include "rapidjson/error/error.h"
+#include <rapidjson/reader.h>
+#include <rapidjson/stream.h>
+
+using namespace rapidjson;
+
+class Handler : public BaseReaderHandler<UTF8<> > {
+public:
+  bool Double(double d) {
+    std::cout << d;
+    return true;
+  }
+};
+
+void test(const char* json) {
+  std::cout << json << " -> ";
+  Reader reader;
+  StringStream stream(json);
+  Handler handler;
+  if (!reader.Parse(stream, handler)) {
+    std::cout << GetParseError_En(reader.GetParseErrorCode());
+  }
+  std::cout << std::endl;
+}
+
+int main() {
+  test("3.14");
+  test("1e308");
+  test("1.7e308");
+  test("1.8e308");
+  test("5e308");
+  test("1e309");
+  test("1.0e310");
+  test("1.00e310");
+  test("-1.7e308");
+  test("-1.8e308");
+  test("-1e309");
+}
+Add Comment 
+
+marcchapman [10:38 AM] 
+https://github.com/GroupFourBestGroup/rapidjson/blob/master/example/tutorial/tutorial.cpp
+GitHub
+GroupFourBestGroup/rapidjson
+rapidjson - A fast JSON parser/generator for C++ with both SAX/DOM style API
+ 
+
+marcchapman [11:12 AM] 
+uploaded this file
+Jsontest01.zip
+861KB
+Zip
+ Click to download
+Add Comment
+
+kat_angel [12:01 PM] 
+@daical   If you can make it, the group is meeting up on Tuesday 10-12 (lab C, I think). Hope that you're feeling a little better!
+1 reply 12 days ago View thread
+
+marcchapman [7:44 PM] 
+https://spacetelescope.github.io/understanding-json-schema/  somebody mentioned something about the schema? @daryl?
+
+marcchapman [8:29 PM] 
+@kat_angel  reader.h line 1303
+
+[8:29]  
+if (useDouble) {
+            while (RAPIDJSON_LIKELY(s.Peek() >= '0' && s.Peek() <= '9')) {
+                if (RAPIDJSON_UNLIKELY(d >= 1.7976931348623157e307)) // DBL_MAX / 10.0
+                    RAPIDJSON_PARSE_ERROR(kParseErrorNumberTooBig, startOffset);
+                d = d * 10 + (s.TakePush() - '0');
+            }
+        }
+
+kat_angel [9:38 PM] 
+thanks, I'm going to take a look at this now
+
+kat_angel [10:22 PM] 
+line 1256
+
+[10:22]  
+// Parse NaN or Infinity here
+        else if ((parseFlags & kParseNanAndInfFlag) && RAPIDJSON_LIKELY((s.Peek() == 'I' || s.Peek() == 'N'))) {
+            if (Consume(s, 'N')) {
+                if (Consume(s, 'a') && Consume(s, 'N')) {
+                    d = std::numeric_limits<double>::quiet_NaN();
+                    useNanOrInf = true;
+                }
+            }
+            else if (RAPIDJSON_LIKELY(Consume(s, 'I'))) {
+                if (Consume(s, 'n') && Consume(s, 'f')) {
+                    d = (minus ? -std::numeric_limits<double>::infinity() : std::numeric_limits<double>::infinity());
+                    useNanOrInf = true;
+
+                   if (RAPIDJSON_UNLIKELY(s.Peek() == 'i' && !(Consume(s, 'i') && Consume(s, 'n')
+                                                                && Consume(s, 'i') && Consume(s, 't') && Consume(s, 'y')))) {
+                        RAPIDJSON_PARSE_ERROR(kParseErrorValueInvalid, s.Tell());
+                    }
+                }
+            }
+
+[10:23]  
+@marcchapman  still not sure where exactly the flag is being set, but I'll keep looking
+
+kat_angel [10:34 PM] 
+Error.h line 84     kParseErrorNumberTooBig,     //!< Number too big to be stored in double.
+
+[10:34]  
+maybe replacing any useNanOrInf = true with kParseErrorNumberTooBig will change the message?
+
+kat_angel [10:50 PM] 
+@marcchapman writer.h line 33
+
+[10:50]  
+bool WriteDouble(double d) {
+        if (internal::Double(d).IsNanOrInf()) {
+            if (!(writeFlags & kWriteNanAndInfFlag))
+                return false;
+            if (internal::Double(d).IsNan()) {
+                PutReserve(*os_, 3);
+                PutUnsafe(*os_, 'N'); PutUnsafe(*os_, 'a'); PutUnsafe(*os_, 'N');
+                return true;
+            }
+            if (internal::Double(d).Sign()) {
+                PutReserve(*os_, 9);
+                PutUnsafe(*os_, '-');
+            }
+            else
+                PutReserve(*os_, 8);
+            PutUnsafe(*os_, 'I'); PutUnsafe(*os_, 'n'); PutUnsafe(*os_, 'f');
+            PutUnsafe(*os_, 'i'); PutUnsafe(*os_, 'n'); PutUnsafe(*os_, 'i'); PutUnsafe(*os_, 't'); PutUnsafe(*os_, 'y');
+            return true;
+        }
+
+[10:51]  
+*line 333
+
+[10:54]  
+I think this is getting warmer, but I'll look into debugging more extensively tomorrow.
+
+
+----- March 21st -----
+kat_angel [1:09 AM] 
+uploaded this file
+new burndown chart.
+30KB
+Excel Spreadsheet
+ Click to download
+Add Comment
+
+kat_angel [1:10 AM] 
+I adjusted the story points on trello to hopefully be more realistic. I'm working on the assumption that a couple of issues will take the end of this sprint and the beginning of the next.
+
+[1:10]  
+burndown chart still uses 100 points = 1hr system for clarity.
+
+[1:11]  
+Programmers = 10hrs worth of work, designers = 10.5hrs, testers = 3hrs (there were less issues for testers on trello, this number can be adjusted as needs be)
+
+[1:12]  
+then when part of the work is completed, it's recorded on the burndown chart for a comparison of current progress v. ideal progress
+
+[1:12]  
+the numbers of the next sprints are placeholders
+
+marcchapman [6:34 AM] 
+Due to complexity of the original project organisation i have created a simple application based on the test case for the number too big issue.
+
+[6:35]  
+This can be used as a testbed/framework for the testers to create other tests for other issues, as simple as branching and adding.
+
+[6:35]  
+https://github.com/GroupFourBestGroup/JsonTestApp
+GitHub
+GroupFourBestGroup/JsonTestApp
+Contribute to JsonTestApp development by creating an account on GitHub.
+ 
+
+marcchapman [6:59 AM] 
+http://rapidjson.org/index.html  some useful documentation here, the tutorial section lays out how the library works overall, this is useful for getting an overview of how it functions. The internals section looks quite useful for the designers as it lays out the building blocks and processes such that new features can be added in the same style as the original
+
+daical [11:18 AM] 
+good publication on schema issues ideal for referencing: http://ieeexplore.ieee.org/document/957809/?reload=true
+ieeexplore.ieee.org
+Towards a standard schema for C/C++ - IEEE Xplore Document
+Developing a standard schema at the abstract syntax tree (AST) level for C/C++ to be used by reverse engineering and reengineering tools is a complex and d
+
+daryl [11:33 AM] 
+uploaded and commented on this file
+Test case table.docx
+Word Document
+Click to download
+1 Comment
+
+generic example for test case table. hope it helps
+
+daical [11:35 AM] 
+http://scrum-tool-for-software-testing-projects.targetprocess.com/?gclid=CJCEnIK-59ICFU0Q0wodyAYPwA  ideal to map team work and individual scrum agile process good for individual supporting documentation?
+scrum-tool-for-software-testing-projects.targetprocess.com
+Scrum tool for software testing projects (109KB)
+
+kat_angel [9:42 PM] 
+uploaded this file
+Sprint Notes.docx
+Word Document
+Click to download
+Add Comment
+
+kat_angel [9:44 PM] 
+@marcchapman @daical @adamashford @chelsloren @daryl @veryc0mm0nname  I've got a rough sprint notes uploaded. I tried to keep it brief since I think that was the point with Scrum. Please let me know (or just update the document) if anything appears to be missing.
+
+kat_angel [10:44 PM] 
+oh yeah, and if @everyone could mention if they resolved any issues so I can update the burndown chart as and when, that would be good ^^
+
+
+----- March 25th -----
+marcchapman [5:52 AM] 
+uploaded this file
+Addison.Wesley.Succeeding.With.Agile.Nov.2009.ISBN.0321579364.pdf
+49MB
+PDF
+ Click to open original
+Add Comment
+
+marcchapman [5:53 AM] 
+uploaded this file
+Addison.Wesley.Essential.Scrum.Aug.2012.ISBN.0137043295.pdf
+22MB
+PDF
+ Click to view
+1 Comment
+
+veryc0mm0nname [4:37 PM] 
+File the example file my error was talking about, going to make a diagram about it.
+
+veryc0mm0nname [4:45 PM] 
+can't get Visio at home so going to use word and transfer at uni
+
+daical [5:17 PM] 
+commented on marcchapman’s file Addison.Wesley.Essential.Scrum.Aug.2012.ISBN.0137043295.pdf
+Happy Birthday Marc all the best fella
+
+

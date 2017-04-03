@@ -1,0 +1,66 @@
+----- March 31st -----
+kat_angel [12:02 PM] 
+struggling along slowly with #798. it seems to be because the - aren't escaped and need to be
+
+marcchapman [12:07 PM] 
+the ones in the date?
+
+kat_angel [12:15 PM] 
+that's the one. I'm not sure what else could be causing the problem
+
+marcchapman [12:25 PM] 
+ok, one sec, i know you need to go feed before lecture
+
+kat_angel [12:25 PM] 
+tried escaping the - in main, and that didn't work. dang
+
+marcchapman [12:26 PM] 
+char message[] = "{\"protocol\":\"SEA-OBK\", \"version\":100, \"publisher\":\"SEA\", \"type\":\"Update\", \"timestamp\":2997676.867, \"localtime\": \"2016 - 11 - 22 09:21 : 21.239067\"}";
+
+[12:26]  
+that string works to create valid json
+
+[12:26]  
+https://jsonformatter.curiousconcept.com/
+jsonformatter.curiousconcept.com
+JSON Formatter & Validator
+Format and validate JSON data so that it can easily be read by human beings.
+
+[12:26]  
+useful website to test output strings
+
+kat_angel [12:27 PM] 
+cool, thanks
+
+[12:27]  
+yeah, I think it must be because of something else
+
+[12:27]  
+it seems there's a difference between 'normal' parsing and insitu
+
+[12:27]  
+I think I'll try comparing them next
+
+marcchapman [12:27 PM] 
+added this C++ snippet: main.cpp
+/*
+#include <rapidjson/document.h>
+#include <rapidjson/prettywriter.h>
+#include <rapidjson/error/en.h>
+#include <rapidjson/rapidjson.h>
+Add Comment Click to expand inline 33 lines
+
+marcchapman [12:28 PM] 
+a few lines there to convert to a C++ string, and then output a json file
+
+[12:28]  
+will probably be useful during ongoing testing
+
+kat_angel [12:29 PM] 
+thanks, I'll keep trying!
+
+marcchapman [12:30 PM] 
+http://bit.ly/2oGflGT  (23KB)
+
+[12:30]  
+output from that program in that validator link i sent

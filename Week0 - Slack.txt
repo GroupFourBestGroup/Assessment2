@@ -1,0 +1,373 @@
+----- March 14th -----
+marcchapman [10:09 AM] 
+joined #general. Also, @chelsloren  joined, @daryl  joined, @adamashford  joined.
+
+daryl [10:15 AM] 
+testing messages
+
+kat_angel [10:15 AM] 
+joined #general
+
+daryl [10:16 AM] 
+i am testing the message system..... hello is anyone there
+
+chelsloren [10:16 AM] 
+Hi
+
+veryc0mm0nname [10:17 AM] 
+joined #general
+
+daryl [10:18 AM] 
+hello
+
+veryc0mm0nname [10:18 AM] 
+I read you
+
+adamashford [10:18 AM] 
+I'm not here
+
+marcchapman [10:53 AM] 
+https://github.com/mlpack/mlpack
+GitHub
+mlpack/mlpack
+mlpack: a scalable C++ machine learning library --
+ 
+
+[10:54]  
+https://github.com/miloyip/rapidjson
+GitHub
+miloyip/rapidjson
+rapidjson - A fast JSON parser/generator for C++ with both SAX/DOM style API
+ 
+
+[10:54]  
+https://github.com/aspnet/Mvc
+
+[10:58]  
+https://github.com/nlohmann/json
+GitHub
+nlohmann/json
+json - JSON for Modern C++
+ 
+
+[10:58]  
+https://github.com/aspnet/Mvc
+
+kat_angel [10:59 AM] 
+https://habitica.com/static/front
+Habitica
+Habitica: Your Life the Role Playing Game
+Habitica is a free habit building and productivity app that treats your real life like a game. With in-game rewards and punishments to motivate you and a strong social network to inspire you, Habitica can help you achieve your goals to become healthy, hard-working, and happy.
+ 
+
+[10:59]  
+https://github.com/aspnet/Mvc
+
+[11:00]  
+https://github.com/TEAMMATES/teammates/labels/d.FirstTimers
+GitHub
+TEAMMATES/teammates
+teammates - This is the project website for the TEAMMATES feedback management tool for education
+ 
+
+[11:00]  
+https://github.com/MunGell/awesome-for-beginners
+GitHub
+MunGell/awesome-for-beginners
+awesome-for-beginners - A list of awesome beginners-friendly projects.
+ 
+
+[11:01]  
+https://github.com/phpmyadmin/phpmyadmin/labels/newbie
+GitHub
+phpmyadmin/phpmyadmin
+phpmyadmin - phpMyAdmin
+ 
+
+
+----- March 14th -----
+kat_angel [11:56 AM] 
+thoughts so far
+
+[11:56]  
+mlpack
+
+Uses CMake as the installation tool. Instructions mostly for Ubuntu?
+
+[11:56]  
+rapidjson
+
+Also CMake. No real documentation?
+
+json
+
+Actually location of the code seems unclear? Also uses CMake
+
+mvc
+
+Also no real build instructions.
+
+[12:00]  
+habitica
+
+[12:00]  
+big documentation/install instructions
+
+[12:01]  
+code in .jade file format?
+
+marcchapman [2:44 PM] 
+https://cmake.org/files/v3.7/cmake-3.7.2-win64-x64.msi
+
+[2:44]  
+http://i.imgur.com/b489V5i.png  (19KB)
+
+[2:44]  
+Hit configure button after entering appropriate data in fields
+
+[2:44]  
+http://i.imgur.com/VnMSpOB.png  (6KB)
+
+[2:45]  
+http://i.imgur.com/gwZhMnG.png  (9KB)
+
+[2:45]  
+click finish
+
+[2:45]  
+hit configure again until red goes away
+
+[2:46]  
+http://i.imgur.com/agPFY0j.png  (24KB)
+
+[2:47]  
+http://i.imgur.com/2UXlwPq.png  (96KB)
+
+[2:48]  
+solution file should launch VS2015
+
+[2:49]  
+this should work as a quick and dirty introduction to cmake
+
+kat_angel [5:11 PM] 
+thanks! hoping this works on vs2013
+
+kat_angel [6:25 PM] 
+managed to get rapidjson and json to build using Cmake. Habitica has the most thorough instructions, but there aren't many languages on the list we're familiar with: http://habitica.wikia.com/wiki/Guidance_for_Blacksmiths
+Habitica Wiki
+Guidance for Blacksmiths | Habitica Wiki | Fandom powered by Wikia
+Blacksmiths are vital to the success of Habitica. Your contributions are needed and appreciated! There are several ways to contribute coding expertise to the website and mobile apps. A great first...
+
+marcchapman [7:08 PM] 
+For C++ projects i'd highly recommend an upgrade to vs2015, many (possibly most) current projects use advances and features of C++11,  vs2015 is the first compiler to support the new features, it also has a fully free version vs2015 community which is roughly equivalent of Visual studio Professional version.
+
+[7:09]  
+I dont think there is any real new benefits for C# or other .net languages, but i'm not the best person to ask on that score
+
+
+----- March 15th -----
+marcchapman [7:47 AM] 
+I have been doing some minor works this morning. All group members are now full administrators/owners of the GroupFourBestGroup Organisation
+
+[7:48]  
+I have forked a bunch of the possible project repos into the organisation, these can be studied and can be deleted once a final decision has been made.
+
+[7:50]  
+Also i have added a repo named Assessment 2, this can serve as a document repository as well as a wiki.
+
+[7:52]  
+This should ideally mean that we can limit the number of tools to the minimum required, as well as maximise communication between group members, especially considering the co-location opportunities are minimal.
+
+chelsloren [12:16 PM] 
+Would anyone mind if David joined our group?
+
+marcchapman [12:23 PM] 
+Calloway?
+
+chelsloren [12:23 PM] 
+Yeah he got in touch with me today saying he is returning on Monday
+
+marcchapman [12:29 PM] 
+OK. Good to hear he is on the mend. Assuming kat and Adam are OK ! we look forward to seeing him back.
+
+1 reply 16 days ago View thread
+
+marcchapman [1:47 PM] 
+http://i.imgur.com/hpBHcVN.png  (407KB)
+
+marcchapman [2:44 PM] 
+https://github.com/miloyip/rapidjson/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement
+GitHub
+miloyip/rapidjson
+rapidjson - A fast JSON parser/generator for C++ with both SAX/DOM style API
+ 
+
+
+----- March 16th -----
+kat_angel [2:27 PM] 
+looked up duties of a Scrum master, which seem to be as follows: keeping product backlog in good shape for sprint, facilitate meetings/standups, keep process going.
+
+[2:28]  
+over the weekend I'll put together a rough plan for the sprint and hopefully you'll have some suggestions/adjustments for me
+
+[2:29]  
+I'll try and come up with a simple burndown chart too
+
+[2:29]  
+so we can have our first standup meeting on Monday and start work
+
+[2:31]  
+I'll be at home over the weekend, so I'll try and get it posted Sat/Sun evening
+
+[2:32]  
+I might just email the docs to everyone and then get github set up locally since I know it can be tricky
+
+marcchapman [2:35 PM] 
+I did some writing on the assessment 2 wiki, which apparently doesnt count as part of the notification system, so let me just find the link...
+
+[2:36]  
+https://github.com/GroupFourBestGroup/Assessment2/wiki
+GitHub
+GroupFourBestGroup/Assessment2
+Contribute to Assessment2 development by creating an account on GitHub.
+ 
+
+daical [2:39 PM] 
+joined #general
+
+daical [2:45 PM] 
+Hello group four
+
+marcchapman [3:03 PM] 
+hey
+
+daical [3:03 PM] 
+Hello
+
+marcchapman [3:04 PM] 
+Can you see full group chat history? or just from when you joined? not sure how this works for new members
+
+daical [3:05 PM] 
+I think it's from the start
+
+[3:07]  
+Need to set up ml is that correct
+
+chelsloren [3:22 PM] 
+no, we are doing the Rapid Json project instead here is the link:  https://github.com/miloyip/rapidjson
+GitHub
+miloyip/rapidjson
+rapidjson - A fast JSON parser/generator for C++ with both SAX/DOM style API
+ 
+
+marcchapman [3:23 PM] 
+https://github.com/GroupFourBestGroup  is the group github organisation, not sure if you can just request to join, or if you need an invite, if so we need you github username/handle for the invite
+GitHub
+GroupFourBestGroup
+GitHub is where people build software. More than 20 million people use GitHub to discover, fork, and contribute to over 54 million projects.
+ 
+
+[3:25]  
+also. we have a trello team set up, not sure if that is 100% suitable however, but at the moment better than nothing else set up so far :stuck_out_tongue:
+
+[3:25]  
+https://trello.com/b/uMZ6ID4Q/softeng-assignment-2
+
+daical [3:27 PM] 
+Thanks all keep me busy over the next few days
+
+
+----- March 17th -----
+kat_angel [10:24 PM] 
+rough sprint plan at: https://trello.com/b/uMZ6ID4Q/softeng-assignment-2
+
+[10:27]  
+feel free to query any of the issues. I think I've covered all the issues we pointed out on Wednesday that Marc put on the github link, and put some possibles for the next sprint on a new card
+
+[10:29]  
+I'll put a rough burn chart somewheres next, either on github or emailing it out to everyone
+
+[10:33]  
+I've made the assumption that the testers will be testing the issues, then attempting to code a fix after taking a quick look at this summary about Test Driven Development: http://agiledata.org/essays/tdd.html
+
+[10:34]  
+if there's too much overlap between programmer and tester, maybe more issues could be added to the testing sprint?
+
+[10:35]  
+everyone has about 3 issues to look at each. if we run over, the sprint will extend to 2 weeks. if it seems like too much/little, it can probably be adjusted as and when
+
+daical [10:40 PM] 
+Hello how can I access trello
+
+daical [11:19 PM] 
+Can someone invite me to the trello board thanks
+
+
+----- March 18th -----
+kat_angel [10:50 AM] 
+try this link : https://trello.com/invite/b/uMZ6ID4Q/4b59cc8b22128c70ff91f16963d5b65d/softeng-assignment-2
+
+[10:50]  
+@daical  ^
+
+[10:53]  
+to make a burndown chart, story points have to be assigned to each issue. the story points themselves are arbritrary, it's relative size that counts most
+
+[10:53]  
+https://www.mountaingoatsoftware.com/blog/what-are-story-points
+
+[10:54]  
+each group has 3 issues to look at. I assigned each issue 300 points, making 900 for all groups. the first sprint totals 2700 points
+
+[10:55]  
+(if anyone feels these should be adjusted, please feel free to say so)
+
+[10:56]  
+I found a template for the burndown chart here: http://phdesign.com.au/general/excel-templates-for-scrum-product-and-sprint-backlogs/
+
+kat_angel [10:57 AM] 
+uploaded and commented on this file
+burndownChart.xlsx
+30KB
+Excel Spreadsheet
+ Click to download
+1 Comment
+Rough burndown chart, all points after sprint #1 are estimates
+
+daical [10:57 AM] 
+Thanks Kat
+
+[10:57]  
+Thanks Kat
+
+kat_angel [10:57 AM] 
+Sure thing! The Charts tab is the relevant bit, the rest just came with the template
+
+[11:00]  
+I think that covers what I needed to do for Monday, but feel free to let me know any adjustments/stuff I've overlooked and I'll get it done today or tomorrow
+
+[11:02]  
+I'll email out the file in case anyone forgets to check Slack before then
+
+marcchapman [11:22 AM] 
+The difficulty appears to be how one assigns the point value to each issue, while \it appears relatively simple fro some of the smaller tasks, it appears more complex with the bigger issues, which need breaking down into smaller subtasks.
+
+[11:25]  
+I am also beginning to question whether trello supports our need, while it is a solid replacement for walls full of post-it notes, should we be considering a tool that also combines the spreadsheet and/or its features?
+
+kat_angel [10:37 PM] 
+I think I'll adjust the story points tomorrow. It might end up that some groups have fewer tasks and some more, but the complexity will be essentially the same.
+
+[10:40]  
+Maybe everyone can poke around and see if there is a better replacement for Trello
+
+
+----- March 19th -----
+marcchapman [10:33 AM] 
+http://i.imgur.com/piOlIBH.png  (14KB)
+
+marcchapman [10:34 AM] 
+slides that to the top of the rules of software engineering
+
+kat_angel [8:23 PM] 
+possible new story points system - 100 points = 1 hr worth of work. 300 points = 1 sprint (2 hrs workshop + 1 hr meeting outside of class). I changed the story points on the issues based on this system, but it might be a bit optimistic to get all three issues done in one week. thoughts?

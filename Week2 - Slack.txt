@@ -1,0 +1,383 @@
+----- March 27th -----
+daical [9:51 AM] 
+https://appear.in/groupfourbestgroup  this link allows us to video conference within trello for meetings  on the friday and its free I have set it up and we can utilise it if we want.
+appear.in
+Join the room
+appear.in  is the easiest way to talk to people over video. (708KB)
+
+daryl [10:15 AM] 
+basic trello guide
+
+daryl [10:15 AM] 
+uploaded this file
+Trello guide.docx
+100KB
+Word Document
+ Click to download
+Add Comment
+
+
+----- March 28th -----
+marcchapman [10:15 AM] 
+https://github.com/GroupFourBestGroup/Assessment2/wiki/Schedule
+GitHub
+GroupFourBestGroup/Assessment2
+Contribute to Assessment2 development by creating an account on GitHub.
+ 
+
+daryl [10:46 AM] 
+uploaded and commented on this file
+Simple_Test_completed.docx
+Word Document
+Click to download
+1 Comment
+completed the basic number tests from the example testing chart. as the outcome is dependent on system properties the acceptance mentioned that one of the flags was working and that it technically met the requirements of the bug.
+
+daryl [11:10 AM] 
+uploaded and commented on this file
+Simple_Test_852.docx
+Word Document
+Click to download
+1 Comment
+simple test case scenarios for bug #852. inconsistent quote marks with creating numbers.
+
+
+----- March 30th -----
+marcchapman [11:03 AM] 
+@everyone As per discussion regards the friday online hook up experiment 1.. I am available all day, Personal preference is mornings; ideally 12-1 would be for lunch but i can fast-lunch at my desk if that timeslot is needed, iirc @adamashford  && @kat_angel  have lectures 1-3, so a 2 hour slot either side of that seems most logical?
+
+kat_angel [11:11 AM] 
+so 11-12 then 4-5?
+
+marcchapman [11:12 AM] 
+sorry i meant either or, so 2 hours before or 2 hours after, assuming we are using a 2 hour slot as default
+
+[11:13]  
+give or take a coffee break between for those of you timetabled 103
+
+[11:13]  
+1-3
+
+kat_angel [11:23 AM] 
+gotcha! then either 10-12 or 4-6, depending what people prefer? I guess I'd vote mornings but I can go with whatever
+
+marcchapman [11:39 AM] 
+https://www.burndownfortrello.com  found by @daical   i have spend 20 mins tinkering, probably broke it... it appears to be functional only for the current sprint, i cant find a way to add other sprints.
+Burndown for Trello
+Burndown Charts for Trello
+Burndown Charts for your Trello boards. Great for Scrum / Agile teams! (19KB) 
+
+[11:40]  
+Also, it appears to dislike adding tasks mid sprint
+
+[11:40]  
+http://bit.ly/2nmCcae  (32KB)
+
+[11:41]  
+I'm guessing if we (somebody) fills this in on monday, it will look a fair bit more civilised
+
+kat_angel [11:50 AM] 
+I can always give it a go later on today to save losing time on Monday
+
+daical [12:28 PM] 
+http://scrumfortrello.com/  greta addon here to help with the above
+
+daical [12:29 PM] 
+uploaded this image: Pasted image at 2017-03-30, 11:29 AM
+Add Comment
+
+kat_angel [12:32 PM] 
+looks good! does the plug in link up with the board somehow?
+
+daical [12:34 PM] 
+@kat_angel  Yeah im linking it now, we all need to add it to our browser addon to integrate it
+
+kat_angel [12:34 PM] 
+cool, thanks
+
+[12:35]  
+I was also wondering if sprint #2 is missing some issues - have the designers and testers recorded what they're currently working on? even if there's no issue number in terms of rapidjson I just figured it would be useful for the write-up
+
+daical [12:35 PM] 
+About this Add-on
+Scrum for Trello adds functionality to the awesome trello.com  for use in Scrum projects.
+
+Add estimates or record time-spent directly on Trello cards. Shows sums at the top of each list and the top right corner of each board.
+
+To use, simply open a Trello card click the title of the card to edit it. There are buttons with Fibonacci numbers (1, 2, 3, 5, 8, ...etc.) to let you quickly add an estimate. You can also type in the estimate or the time-spent. To type an estimate, just surround it in parentheses like this: (4) to type the amount of time-spent, put that in square brackets like this: [2]. Those numbers can appear anywhere in the title, but a common convention is to put the estimate at the beginning of the card and the time-spent at the end, like this: "(8) Create Firefox Extension [4.5]". Decimal numbers are accepted for both values.
+
+daical [12:47 PM] 
+The burn down chart is now a full working system as i have paid for it full membership
+
+kat_angel [12:47 PM] 
+thanks @daical
+
+[12:47]  
+can we just google the extension to use it?
+
+daical [12:49 PM] 
+go to scrum for trello and add it to the browser you use by clicking on the link use the browser to log into trello and it all works
+
+[12:52]  
+https://appear.in/umz6id4q-understood-goldfish
+appear.in
+Join the room
+appear.in  is the easiest way to talk to people over video. (708KB)
+
+[12:52]  
+im online
+
+[12:54]  
+crum for Trello
+Getting started
+
+   To add an estimate to a card, first click a card to open it
+    Click the title of the card to "edit" the title.
+    Once the Card title is in edit-mode, blue number buttons will appear. Click one of the buttons to set that as the estimate.
+
+Settings
+These settings affect how Scrum for Trello appears to you on all boards. When you're done, remember to click "Save Settings" below.
+Burndown Chart link
+Enable "Burndown Chart" link (recommended)
+Icon only
+Disable completely
+Estimate Buttons
+List out the values you want to appear on the estimate buttons, separated by commas. They can be whole numbers, decimals, or a question mark.
+
+[12:55]  
+onnce you add the addon to your browser follow these instructions to integrate
+
+marcchapman [3:42 PM] 
+https://github.com/GroupFourBestGroup/Assessment2/wiki/Sprint-and-Scrum-Logs  has been updated
+GitHub
+GroupFourBestGroup/Assessment2
+Contribute to Assessment2 development by creating an account on GitHub.
+ 
+
+[3:43]  
+Also, we need to order the Scrum Masters for the following weeks, since the page is a wiki feel free to add your name to any of the empty slots :stuck_out_tongue:
+
+adamashford [9:48 PM] 
+I'm fine with 10-12 for tomorrow.
+
+
+----- Yesterday March 31st, 2017 -----
+marcchapman [9:33 AM] 
+Ive been tinkering with trello, can you guys see the extra boards ive created automatically? i have created a test board and a product backlog board
+
+daical [9:48 AM] 
+@marcchapman hi Marc no cannot see it
+
+marcchapman [9:50 AM] 
+morning :slightly_smiling_face:  oh well... bleargh... *wanders off to fix it*
+
+[9:52]  
+ok, and fixed, seems to be an odd quirk, board says team visible
+
+marcchapman [9:52 AM] 
+shrugs
+
+marcchapman [9:53 AM] 
+ok, so heres the thinking, since the burndown thing works slightly oddly with trello (or maybe not but documentation sucks)
+
+daical [9:54 AM] 
+Still not seen
+
+marcchapman [9:55 AM] 
+each sprint needs its own board, and each team needs its own copy of the 'card' for each issue, which kind of makes sense, since each role has different checklists
+
+daical [9:55 AM] 
+I am on mobile IOS
+
+marcchapman [9:55 AM] 
+click on boards, to see if you have more boards listed
+
+daical [9:55 AM] 
+Time to boot up pc
+
+marcchapman [9:56 AM] 
+ahh, dont know how stuff interacts with mobile, could present issues i guess, even tho it shouldnt
+
+kat_angel [10:00 AM] 
+morning! I'll log into Trello and see if I can see it
+
+marcchapman [10:00 AM] 
+@daical  you werent added to the trello 'team' you were just added to the single board, that has now been fixed
+
+[10:01]  
+created a new board 'can you see this' if you can, that would be cool, if not i have to remember to add people to the boar as its created
+
+adamashford [10:03 AM] 
+I can't see "can you see this"
+
+kat_angel [10:04 AM] 
+me neither. I can see Sprint03, Test01, the assignment board and the product backlog
+
+adamashford [10:05 AM] 
+I can only see sprints 1-4
+
+marcchapman [10:06 AM] 
+@kat_angel  i have made you admin, can you recheck?
+
+kat_angel [10:06 AM] 
+sure! I'll log out and in again just to be certain
+
+marcchapman [10:07 AM] 
+if that fails then it would appear that this is an 'upgrade' feature that requires payment, or just a reminder that board creators need to add team members on board creation, which works fine for now, but requires a mental note for future reference
+
+kat_angel [10:08 AM] 
+uploaded this image: I have this:
+Add Comment
+
+kat_angel [10:08 AM] 
+so I think it might be an upgrade thing?
+
+marcchapman [10:08 AM] 
+oh well, worth a try
+
+[10:10]  
+reasoning here is that burndownfortrello works well, but requires a slight shift in how we work with trello, since you can move entire lists as well as individual cards between boards and lists the solution is relatively simple
+
+daical [10:12 AM] 
+i CAN SEE THEM IN msc Computer Science
+
+adamashford [10:12 AM] 
+Ah.
+
+[10:12]  
+Found them
+
+marcchapman [10:14 AM] 
+It requires manual setting when you create a board use the menu to add team members, trivial step considering the volume of time project management takes overall
+
+kat_angel [10:15 AM] 
+Mine looks the same. Am I looking in the wrong place? I've got sprints 1-4, the backlog and the assignment board
+
+marcchapman [10:16 AM] 
+thats fine the 'can you see this' was a test board, i'll remove, now i know what the score is
+
+[10:17]  
+I'll look at daryls trello tutorial and adjust it
+
+kat_angel [10:18 AM] 
+sure thing! I have the trello for scrum extension in. will everyone need to set up the points individually or can we get them all done and everyone can see the current state of play once the extension is added?
+
+[10:18]  
+if that makes sense
+
+marcchapman [10:19 AM] 
+the plugin is shared the same as the board, if you checkout the sprint03 board which is currently just a sample board i'm testing with, you should see some added info
+
+kat_angel [10:21 AM] 
+cool, will do
+
+daical [10:26 AM] 
+https://appear.in/umz6id4q-understood-goldfish
+appear.in
+Join the room
+appear.in  is the easiest way to talk to people over video. (708KB)
+
+marcchapman [10:27 AM] 
+I am allocating (for now) 8 hours of work per task, apart from testing, since testing is a little different; They need to do 2 stints one before coding and one after.
+
+[10:27]  
+All roles also need custom checklists (makes it easier when creating new cards)
+
+kat_angel [10:28 AM] 
+is sprint 03 the current board? I think I might need to add to it
+
+marcchapman [10:29 AM] 
+no, current board is still Softeng Assignment 2
+
+kat_angel [10:31 AM] 
+do you want me to have a look at adding story points for the current issues on that board?
+
+daical [10:33 AM] 
+Hello all adam and I are in the chat conference linked
+
+[10:33]  
+join the room
+
+marcchapman [10:34 AM] 
+no camera or microphone.
+
+daical [10:35 AM] 
+what time are we all on conference
+
+marcchapman [10:36 AM] 
+@kat_angel  i have added some arbitrary points that currently i envision as 'hours' but i am still learning here, also the non paid version of burndown only uses hours
+
+kat_angel [10:36 AM] 
+that's fine, I was working in hours originally
+
+[10:37]  
+think my camera might not pick up much since I put a sticker over it
+
+[10:38]  
+also where does the microphone live?
+
+daical [10:38 AM] 
+Adam and I have aborted Video conference
+
+kat_angel [10:39 AM] 
+sorry about that! I don't think we can really do a virtual stand-up without the rest of the team, anyways
+
+daical [10:39 AM] 
+Thats Ok
+
+[10:40]  
+:+1:
+
+adamashford [10:40 AM] 
+We can write about it in the report anyway.
+
+
+kat_angel [10:40 AM] 
+is there anything else pressing we need to discuss? if not, I figured I'd try and troubleshoot the code some more and check back here periodically.
+
+marcchapman [10:41 AM] 
+not sure how well vid conferencing works for groups larger than 2-3, and kat also makes a good point, tbh 4/7 turnout is probably decent for first try :stuck_out_tongue:
+
+
+daical [10:41 AM] 
+Upto Marc
+
+marcchapman [10:42 AM] 
+I actually thought the idea was do allocate this time to doing the work anyway, with the channel here for live feedback and updates for the period specified, rather than really a meeting or conference
+
+
+kat_angel [10:43 AM] 
+ok, cool. in that case I'll be AFK while I troubleshoot the code some more. I'll check back in a little while
+
+
+marcchapman [10:46 AM] 
+http://i.imgur.com/idQdTAu.png  (112KB)
+
+[10:46]  
+http://i.imgur.com/wxVlu1U.png  (9KB)
+
+[10:48]  
+Quick and easy way to add an 'application' to your desktop (assuming you use chrome) works for most websites, the 'open as window' tickbox removes all extra fluff a browser has
+
+[10:50]  
+example http://bit.ly/2oG5d0F  (134KB)
+
+marcchapman [12:32 PM] 
+@daryl @daical @adamashford  in #codespam  there is a sample file to output a string to a json file and a link to a validator
+
+chelsloren [6:56 PM] 
+hey guys, sorry i didnt join in earlier. I have completed my tasks for this sprint, do I need to add what ive done and how long I worked on it for as a comment anywhere in trello? Or would a checklist be better to show what ive done? I will also update my board to add the files for the programmers and testers to view.
+
+[6:58]  
+also would it be beneficial to add each sprint like the one that has currently been developed for sprint 3 on trello? if so, I don't mind creating it
+
+
+----- Today April 1st, 2017 -----
+marcchapman [8:39 AM] 
+@chelsloren   currently the SoftEng Assignment 2 board is still the main trello board. i have moved the #836 card from product backlog to the sprint #2 list, i intend to make amendments to @daryl  trello tutorial later on to describe how the new (hopefully improved) workflow changes are handled.
+
+marcchapman [8:50 AM] 
+Given that we have further developed working practices from previous weeks, as well as the discovery of burndownfortrello by david, i am thinking there were 2 options, 1) for each issue make 3 cards, one per role, with individual role based checklists 2) create one card per issue with a larger multi role checklist, or multiple checklists. Each have their pros and cons, the biggest con being that we are running short sprints, so each issue can run across sprints especially across roles. So it seems to me that each role should create a card just for its own task.
+
+[8:52]  
+opinions and comments welcomed, if not desired :stuck_out_tongue:

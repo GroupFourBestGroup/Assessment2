@@ -1,0 +1,126 @@
+marcchapman [6:39 AM] 
+joined #codespam
+
+marcchapman [6:39 AM] 
+set the channel purpose: Pasting code snippets
+
+kat_angel [3:21 PM] 
+joined #codespam
+
+kat_angel [10:43 PM] 
+@marcchapman I'm going to pick up looking at the code again tomorrow afternoon
+
+
+----- March 22nd -----
+kat_angel [4:19 PM] 
+this part appears to print out the message from main.cpp line 12:
+
+[4:19]  
+class Handler : public BaseReaderHandler<UTF8<> > {
+public:
+    bool Double(double d) {
+        std::cout << d;
+        return true;
+    }
+};
+
+[4:20]  
+so somewhere 'd' is being set
+
+kat_angel [4:41 PM] 
+at reader.h 1337
+
+[4:41]  
+d = static_cast<double>(i64);
+
+[4:42]  
+d becomes 18.0000000
+
+[4:42]  
+for 1.8e308
+
+kat_angel [4:54 PM] 
+at strtod.h line 42
+
+[4:54]  
+d is set:
+
+[4:54]  
+d = FastPath(d, p);
+
+kat_angel [6:32 PM] 
+d becomes 1.#INF
+
+kat_angel [8:40 PM] 
+from stortd.h. the part that appears to set the 'inf':
+
+[8:40]  
+inline double FastPath(double significand, int exp) {
+    if (exp < -308)
+        return 0.0;
+    else if (exp >= 0)
+        return significand * internal::Pow10(exp);
+    else
+        return significand / internal::Pow10(-exp);
+}
+
+[8:41]  
+from stackoverflow: inf is a special floating point value, arising, for example, from division over zero
+
+[8:46]  
+also from stack overflow:  When you call it, your long double will be converted in a double which cannot store such a big number, and will thus get the value of infinity.
+
+[8:46]  
+so hopefully there's a way to repress large values being returned as inf
+
+
+----- March 23rd -----
+kat_angel [12:30 AM] 
+@marcchapman I came up with hopefully a rough potential solution
+
+[12:31]  
+added to strtod.h FastPath
+
+[12:31]  
+inline double FastPath(double significand, int exp) {
+        if (exp < -308)
+            return 0.0;
+        else if (exp >= 0)
+        {
+            if (std::isinf(significand * internal::Pow10(exp))) {
+                std::cout << "Number too big to be stored in double. ";
+                return INFINITY;
+            }
+            else {
+                return significand * internal::Pow10(exp);
+            }
+        }
+        else {
+            if (std::isinf(significand / internal::Pow10(-exp))) {
+                std::cout << "Number too big to be stored in double. ";
+                return -INFINITY;
+            }
+            else {
+                return significand / internal::Pow10(-exp);
+            }
+            
+        }
+    }
+
+[12:31]  
+which produces:
+
+kat_angel [12:33 AM] 
+uploaded this image: #849.PNG
+Add Comment
+
+kat_angel [12:34 AM] 
+which somewhat standardises everything to the same message, but allows differentiation between numbers that are too big for double and infinity values, which I assume are different
+
+
+----- March 24th -----
+marcchapman [12:05 PM] 
+http://bit.ly/2nPrVXK  (17KB) 
+
+kat_angel [12:12 PM] 
+maybe one of us can take another quick look to see if we can get the inf flag removed. since we know the size to look for it could be worth testing with it
