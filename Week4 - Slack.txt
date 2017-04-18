@@ -1,0 +1,99 @@
+----- April 12th -----
+kat_angel [9:51 AM] 
+I made some progress on issue #917! I had benched #798 for a while since I was running into dead ends with it.
+
+[9:51] 
+I'll put it on the codespam board and on trello
+
+[9:52] 
+there are also comments against https://github.com/miloyip/rapidjson/issues/917
+GitHub
+How to construct and parse json string values containing '\\r' '\\t' etc characters? · Issue #917 · miloyip/rapidjson
+I have a json like the following: "{"project": "rapid\rjson","stars":10}" In the above json, the string value of "rapid\rjson" has 2 different characters '\' and 'r'. But when the above json is par...
+ 
+
+[9:52] 
+the fix was in how the code was called and not the code itself, so I don't have any branches to push atm
+
+kat_angel [10:04 AM] 
+also, I was hoping we could have a virtual standup next Monday if that works for @everyone ? I know the MSc students might have had another deadline so it's fine if progress is minimal. Monday could be a catchup/agreement for what we hope to do for the week before we're back
+
+marcchapman [10:06 AM] 
+Sorry i haven't been much help, including this i have 5 deadlines in the next 4 weeks as well as an extra soft deadline for the Machine Learning Assignment.
+
+kat_angel [10:07 AM] 
+that's fine, maybe the team could just try to get their parts of Trello in a more realistic state? we might still be being too optimistic with what we have assigned.
+
+[10:07] 
+the rest could go in a backlog
+
+[10:08] 
+I'll drop the team an email since the notifications might not go to an address they check often
+
+chelsloren [11:03 AM] 
+I will be going home on Friday but I should be able to join in on the meeting on Monday, is there a chosen time?
+
+marcchapman [11:06 AM] 
+i'm free all day till about 6pm
+
+chelsloren [11:21 AM] 
+Not sure what I will be doing but I now have slack on my phone so I should be able to receive notifications whenever your posting messages
+
+kat_angel [12:43 PM] 
+it just occurred to me that Monday is a holiday so people might not be around. would Tuesday be better for @everyone ?
+
+kat_angel [3:22 PM] 
+I might have to ask for an afternoon time if we do Tuesday since I'm currently sorting an interview out for next week.
+
+chelsloren [3:22 PM] 
+Tuesday is fine for me
+
+marcchapman [5:05 PM] 
+Me too, in fact i'm pretty much chained to the desk apart from thursdays, and those too probably
+
+
+----- Today April 17th, 2017 -----
+marcchapman [11:35 AM] 
+@kat_angel did you get any/enough responses to consider setting a time/date for a meeting
+
+kat_angel [12:12 PM] 
+apart from what you see on here, I haven't had any responses through email about the sprint meeting.
+
+[12:12] 
+I might need someone to contact @daical  for me though since I don't have his address or student ID
+
+[12:13] 
+I'll be around on Tues (possibly afternoon) regardless and we'll just have to see how it goes?
+
+chelsloren [1:11 PM] 
+When did we officially start creating each of our tasks? I have conflicting dates and don't know which is right
+
+kat_angel [1:40 PM] 
+I haven't been using dates for the write up, since I'm not sure either. I've just been using sprint/stand-up #1, #2 etc.
+
+chelsloren [1:57 PM] 
+fair enough, just making sure because we will all need to have the right information for the write up.
+
+marcchapman [1:57 PM] 
+i think i added dates to the wiki writeup
+
+chelsloren [1:58 PM] 
+it just says week 0, week 1, week 2...
+
+marcchapman [1:59 PM] 
+Sprint 1 [20.03.2017] (SM: Kat)
+
+[2:00] 
+tho ryan hasnt done his writeup yet, so only first 2 sprints are there
+
+chelsloren [2:01 PM] 
+ahh thanks I didnt see that, I think we should be okay just saying 'during sprint 1 I did this'
+
+marcchapman [2:02 PM] 
+yeah, the dates are there just so we know tbh, you can then tie up the weeks vs the chat logs here, as well as the various posts to trello etc etc
+
+[2:02] 
+weeks are weeks to me, they all blend into each other the way my memory works
+
+chelsloren [2:02 PM] 
+fair enough, thanks!

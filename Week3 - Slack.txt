@@ -1,0 +1,93 @@
+----- April 3rd -----
+marcchapman [7:20 AM] 
+after burning refworks using the best thermite you can legally obtain while displaying psychotic traits trying to get it to work..... try using https://www.mendeley.com/
+mendeley.com
+Homepage | Mendeley
+Mendeley is a free reference manager and an academic social network. Manage your research, showcase your work, connect and collaborate with over six million researchers worldwide.
+
+[7:21] 
+ok, dramatic maybe, but still, if theres a corner of hell where software lives, there needs to be a reservation for refworks
+
+daical [11:09 AM] 
+Sorry I'm absent today I am taking my son to Pirbright as he starts his army training and we as a family are saying goodbye. C u tomorrow
+
+chelsloren [12:53 PM] 
+No problem, we haven't been able to do any work today seen as blackboard and the internet has gone down across campus
+
+
+----- April 5th -----
+chelsloren [12:39 PM] 
+Hi guys, just an update: I have uploaded the use case diagram and the UML diagram for the issue/enhancement #821. I will have a look for other possible fixes for our next sprint.
+
+
+----- April 6th -----
+marcchapman [10:38 AM] 
+Since discussion has been light in the past week, especially in group form.
+
+kat_angel [10:39 AM] 
+hey @everyone meant to let you know that Xujiong said there is no supporting documentation to upload for assignment #1, just the essay itself
+
+marcchapman [10:40 AM] 
+is it fair to assume that we are just going to extend the sprint across 3 weeks (as discussed in mini group discussions :stuck_out_tongue: )
+
+[10:40] 
+since if a meeting is organised to do labs during breaks, i'd be a sad lonely puppy in lab C?
+
+chelsloren [10:43 AM] 
+It's a possibility @marcchapman we could also just have these slack meetings instead if we want to squeeze in extra sprints to discuss what needs to be done.
+
+kat_angel [10:45 AM] 
+we could also set a time for a virtual stand up meeting each week. maybe we could have a board for that, and another for notes on trello? that way when things are changed everyone knows why?
+
+chelsloren [10:46 AM] 
+@kat_angel that sounds like a good idea.
+
+marcchapman [10:49 AM] 
+as group negative nancy, i feel the need to point out that group engagement, even when constrained by Lab C, has been a tad under perfect, and non-collocated engagement has not met even those conditions thus far  :slightly_smiling_face:
+
+[10:51] 
+Also, with regards to supporting documentation... i have 6+ pages of appendixes tacked onto the end of the report
+
+chelsloren [10:55 AM] 
+The only problem is I am going home for the holidays next week so organising a meeting might be a problem
+
+marcchapman [11:00 AM] 
+I figured, i also expect kat will likely do the same, ryan lives a train away and wont want to come in unnecessarily adam i dont know from... adam (sorry) david lives middle of nowhere. Assuming any work gets done over the next two weeks at all its likely best to assume that we should sprint review and project review both monday and tuesday the week we return, if nothing else it will give @everyone time to polish or complete a few tasks prior to report stage of the assignment.
+
+[11:01] 
+Perhaps an additional reflection meeting the last week before handin?
+
+[11:02] 
+Personally i'd live to get some of these programming tasks done and dusted so that the whole project looks like its achieved something in the short time we have had available, regardless of the need for such, i think it shows better if thats the case..
+
+marcchapman [12:20 PM] 
+Well... Assignment 1 done, 6 pages requested, 13 delivered :stuck_out_tongue: now... time to sleep
+
+chelsloren [12:31 PM] 
+Well done!
+
+marcchapman [12:37 PM] 
+Thanks :slightly_smiling_face:
+
+kat_angel [5:07 PM] 
+congrats!
+
+kat_angel [7:05 PM] 
+sorry, meant to ask- are we still on sprint #2 or #3?
+
+marcchapman [7:06 PM] 
+i think we moved to 3, i moved programming or most of programming tasks to 3
+
+kat_angel [7:08 PM] 
+got it! I'll update trello later for what I'm doing then
+
+
+----- April 7th -----
+marcchapman [6:45 PM] 
+MSc Group just got shafted, informed that we now have 3 days to do an assignment we all assumed we had 3-4 weeks to complete, pretty sure even the smartest among us are having panic issues right now :confused:
+
+kat_angel [6:58 PM] 
+for machine learning or something?
+
+[6:58] 
+I hope it's not a super long one since that hardly sounds fair
